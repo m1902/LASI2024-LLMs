@@ -161,7 +161,7 @@ def main():
 
     # Check if API key is loaded properly
     if not openai.api_key:
-        raise ValueError("API Key is not set. Please check your .env file.")
+        raise ValueError("API Key is not set. Please check if your .env file contains the OPENAI_API_KEY environment variable.")
 
     # generate API response
     test_get_api_response("Why are we here?")
